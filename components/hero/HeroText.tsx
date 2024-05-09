@@ -29,7 +29,7 @@ export function HeroText() {
 
         <Container p={0} size={600}>
           <Text size="lg" c="dimmed" className={classes.description}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.
+            Porceline provides a wide range of features to help you manage your server. From moderation to fun commands, Porceline has it all.
           </Text>
         </Container>
 

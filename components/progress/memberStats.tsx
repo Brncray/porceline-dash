@@ -25,14 +25,16 @@ export function MemberStats() {
     const progressValue = (count / 10000) * 100;
 
     return (
-        <Card withBorder radius="md" padding="xl" bg="var(--mantine-color-body)">
+        <div style={{display: 'flex', justifyContent: 'center'}}>
+        <Card withBorder radius="md" padding="xl" bg="var(--mantine-color-body)" style={{width: '25%'}}>
             <Text fz="xs" tt="uppercase" fw={700} c="dimmed">
-                Member Count
+                User Count
             </Text>
             <Text fz="lg" fw={500}>
                 {count} / 10000
             </Text>
             <Progress value={progressValue} mt="md" size="lg" radius="xl" />
         </Card>
+        </div>
     );
 }
