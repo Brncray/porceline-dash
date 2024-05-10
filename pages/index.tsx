@@ -31,6 +31,5 @@ async function memberCount() {
   }
   
   const json = res.data.count;
-  console.log(json)
   return json
 }

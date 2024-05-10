@@ -7,7 +7,8 @@ import {
   IconFileAnalytics,
   IconAdjustments,
   IconLock,
-  IconShieldCog
+  IconShieldCog,
+  IconHome
 } from '@tabler/icons-react';
 import { UserButton } from '../UserButton/UserButton';
 import { LinksGroup } from './NavbarLinksGroup';
@@ -37,7 +38,6 @@ export function NavbarNested({profile}: any) {
     <nav className={classes.navbar}>
       <div className={classes.header}>
         <Group justify="space-between">
-          Porceline 
           <Code fw={700}>v0.0.1</Code>
         </Group>
       </div>
@@ -47,6 +47,8 @@ export function NavbarNested({profile}: any) {
       </ScrollArea>
 
       <div className={classes.footer}>
+        <a href="/" style={{textDecoration: 'none'}}>
+      <LinksGroup icon={IconHome} label="Home"/> </a>
         {/* Sign out Button */}
         <LinksGroup icon={IconLock} label="Sign out" />
         <UserButton profile={profile}/>
