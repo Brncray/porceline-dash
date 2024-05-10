@@ -21,7 +21,7 @@ const mockdata = [
     icon: IconShieldCog,
     initiallyOpened: true,
     links: [
-      { label: 'Moderation', link: '/' },
+      { label: 'Moderation', link: '/'},
       { label: 'Music', link: '/' },
       { label: 'Fun', link: '/' },
       { label: 'Misc', link: '/' },

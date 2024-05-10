@@ -2,15 +2,17 @@ import { Text, Progress, Card } from '@mantine/core';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
-export function MemberStats() {
 
-    const [count, setCount] = useState(0);
+
+export function MemberStats({ initialCount }:any) {
+    const [count, setCount] = useState(initialCount);
     
+    /*
     useEffect( () => { 
         async function fetchData() {
             try {
-                const res = await fetch('http://localhost:3001/api/members');
-                const json = await res.json();
+                const res = await axios.get('https://didactic-enigma-9g6vxpgqqh6r7-3001.app.github.dev/api/members')
+                const json = res.data
                 console.log(json); // Add a console.log here to debug the response
                 setCount(json.count);
             } catch (err) {
@@ -19,8 +21,10 @@ export function MemberStats() {
         }
         fetchData();
     }, []);
+    */
 
-    console.log(count);
+
+
 
     const progressValue = (count / 10000) * 100;
 
@@ -38,3 +42,4 @@ export function MemberStats() {
         </div>
     );
 }
+
